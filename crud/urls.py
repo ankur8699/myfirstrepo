@@ -6,7 +6,7 @@ from crud import settings
 from ppp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls ,),
     path('',views.index),
     path('data/',views.data, name="data"),
     path('intex/',views.intex , name="form"),

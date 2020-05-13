@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
     path('data/',views.data, name="data"),
-    path('intex/',views.intex),
+    path('intex/',views.intex , name="form"),
     path('data/<int:id>/update/',views.update, name="update"),
     path('data/<int:id>/delete/', views.delete , name="delete"),
     path('data/<int:id>/item/', views.item , name="item"),
